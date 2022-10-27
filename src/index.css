@@ -7,7 +7,142 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  
+  
+}
+/* фотография */
+#photo{
+  width: 250px;
+  height: 160px;
+}
+.block{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+  border: 1px solid black;
+}
+/*размер иконки корзины*/
+.cartIcon{
+  width: 50px;
+  
+}
+/*кнопки товаров по группам*/
+.categories{
+  display: flex;
+  justify-content: space-around;
+flex-wrap: wrap;
+
+}
+h5{
+  background-color: #DCEEC4;
+  padding: 15px;
+  width: 70px;
+  margin: 10px;
+}
+/*фото в карточке товара*/
+.goods{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+max-width: 91vw;
+}
+/*корзина и количество*/
+.cart-num{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*цифра около корзины*/
+.total-prod-num{
+  color: green;
+
+}
+/*рамка с товарами корзины*/
+.cart-frame{
+  border: 2px solid black;
+  width: 300px;
+  height: auto;
+  margin-left: auto;
+  
+}
+
+/*затемнение фона*/
+#shadow-fon{
+  background: rgba(102, 102, 102, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#shadow-fon:target {display: block;
+}
+/*таблица с содержимым корзины*/
+#window{
+  width: 300px;
+  height: auto;
+  text-align: center;
+  padding: 15px;
+  border: 3px solid green;
+  border-radius: 10px;
+  color: black;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background: #fff;
+  
+}
+/*кнопка закрыть в окне корзины*/
+.close {
+  display: inline-block;
+  border: 1px solid green;
+  color: black;
+  padding: 0 12px;
+  margin: 10px;
+  text-decoration: none;
+  background: #f2f2f2;
+  font-size: 14px;
+  cursor:pointer;
+}
+.close:hover {background: #e6e6ff;}
+
+/*маленькая черная корзина*/
+.icon{
+  width: 20px;
+}
+/*фото внутри корзины*/
+#cart-photo{
+  width: 90px;
+  height: 60px;
+}
+
+nav{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  height: 116px;
+  display: flex;
+ align-items: center;
+ justify-content: space-around;
+ background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,0.9893617021276596) 44%, rgba(205,235,180,1) 100%);
+  flex-wrap: wrap;
+  }
+.link{
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+  font-family: 'Inter', sans-serif;
+  flex-wrap: wrap;
+  
 }
