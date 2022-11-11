@@ -2,16 +2,15 @@
 import { useDispatch} from "react-redux";
 import { filterCategory } from "../../redux/productsSlice";
 
-
-
-
 const Filter =({category}) =>{
-    const dispatch = useDispatch();
+
+const dispatch = useDispatch();
     
-    return(
+return(
         <div>
             
 <h5 onClick={()=>{dispatch(filterCategory(category))}}>{category}</h5>
+
         </div>
     )
 }

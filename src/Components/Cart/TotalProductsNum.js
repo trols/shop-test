@@ -4,9 +4,10 @@ import { getTotalProducts} from "../../redux/cartSlice";
 
 const TotalProductsNum = () =>{
     const totalProducts = useSelector(getTotalProducts);
-    return(<div>
+    return(
+           <div>
  <p>{totalProducts}</p>
-     </div>
+           </div>
     ) 
  
  }
