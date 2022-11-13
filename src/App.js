@@ -18,6 +18,7 @@ import TotalProductsNum from './Components/Cart/TotalProductsNum';
 import Cart from './Components/Cart/Cart'
 
 
+
 function App() {
 
 const [modalActive,setModalActive]= useState(false);
@@ -42,13 +43,13 @@ return <Router>
         </div>
         <Cart active={modalActive} setActive={setModalActive}/>
         </nav>
-       
+        
         <Routes>
         <Route path="/" element={ <MainPage/> } />
         <Route path="/about" element={ <About/> } />
         <Route path="/contact" element={ <Contact/> } />
         <Route path="/delivery" element={ <Delivery/> } />
-       </Routes>
+        </Routes>
       
     </Router>
       

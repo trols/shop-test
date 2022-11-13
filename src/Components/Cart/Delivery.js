@@ -32,7 +32,7 @@ function changeValue(e) {
     }
 
 return( 
-        <div className="frame-delivery">
+        <div>
 
 
 <div className="text-delivery">

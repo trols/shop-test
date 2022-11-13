@@ -48,7 +48,7 @@ const nextItem = () => {
               </button>
                 </div>
             
-        <div className="button-images"><span className="rt">{<Filter key={category}category={category}/>}</span></div>
+        <div className="button-images"><span id="rt">{<Filter key={category}category={category}/>}</span></div>
  
         </div>
 
