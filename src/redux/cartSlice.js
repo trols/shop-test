@@ -8,24 +8,20 @@ export const slice = createSlice({
     },
     reducers:{
         addItemToCart:(state,action)=>{
-            const timeId = new Date().getTime();
+           
             
                 state.cartItems.push({
-                id: timeId, 
-                dishId: action.payload.prod.id,
+               ...action.payload.prod,
                 quantity: action.payload.quantity,
-                totalPrice: action.payload.quantity*action.payload.prod.price,
-                price: action.payload.prod.price,
-            })
+                totalPrice: action.payload.quantity*action.payload.prod.price})
         },
-        updateQuantity: (state, action) => {
+        changeQuantity: (state, action) => {
             const newCart = [];
-            
             state.cartItems.forEach(item => {
-                if (item.itemId === action.payload.shopItem.id) {
-                    let newQuantity = item.quantity + action.payload.quantity;
-                    let totalSum = item.price * newQuantity;
-                    const changeCart = {...item, quantity: newQuantity, totalPrice: totalSum };
+                if (item.id === action.payload.prod.id) {
+                    let countNew = item.quantity + action.payload.quantity
+                    let totalSum = item.price * countNew;
+                    const changeCart = {...item, quantity: countNew, totalPrice: totalSum };
                     newCart.push(changeCart);
                 } else {
                     newCart.push(item);

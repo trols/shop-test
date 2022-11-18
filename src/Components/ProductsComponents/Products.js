@@ -7,16 +7,15 @@ const Products =() =>{
 const selectedCategory=useSelector(getSelectedCategory);
 
 return(
-        <div className="goods">
+     <div className="goods">
  
-{dataProducts
-.filter(prod=>{
-    if (selectedCategory === 'КАТАЛОГ')return true;
-return selectedCategory === prod.category;
-})
-.map(prod =><Prod prod={prod} key={prod.id}/>)}
-
-        </div>
+          {dataProducts
+          .filter(prod=>{
+           if (selectedCategory === 'КАТАЛОГ')return true;
+           return selectedCategory === prod.category;
+                  })
+            .map(prod =><Prod prod={prod} key={prod.id}/>)}
+      </div>
     )
 }
 export default Products;
