@@ -9,13 +9,13 @@ export const slice = createSlice({
     reducers:{
         addItemToCart:(state,action)=>{
            
-            
-                state.cartItems.push({
+           state.cartItems.push({
                ...action.payload.prod,
                 quantity: action.payload.quantity,
-                totalPrice: action.payload.quantity*action.payload.prod.price})
+                totalPrice: action.payload.quantity*action.payload.prod.price
+            })
         },
-        changeQuantity: (state, action) => {
+        updateQuantity: (state, action) => {
             const newCart = [];
             state.cartItems.forEach(item => {
                 if (item.id === action.payload.prod.id) {
@@ -42,7 +42,8 @@ export const slice = createSlice({
 })
 export const getTotalPrice = state =>{
     return state.cart.cartItems.reduce((total,cartItems)=>{
-        return cartItems.totalPrice + total},0)
+        return cartItems.totalPrice + total
+    },0)
 }
 
 export const getTotalProducts = state =>{

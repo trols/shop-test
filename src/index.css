@@ -524,9 +524,39 @@ display: none;
 }
 /*Наши продукты*/
 .headPageTwo{
-  margin-top: 100px;
+  margin-top: 120px;
   font-size: 30px;
   font-weight: lighter;
+}
+.add-button-delivery{
+  padding: 10px;
+  border: 2px solid green;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.add-button-delivery:hover{
+  color: #fff;
+  background-color: green;
+  border: 2px solid green;
+}
+.button-two-page{
+  border: 1px solid green;
+  border-radius: 10px;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  background: #f2f2f2;
+  font-size: 14px;
+  cursor:pointer;
+ width: 150px;
+}
+.button-two-page:hover{
+  color: #fff;
+  background-color: orange;
+  border: 1px solid orange;
 }
 
 @media all and (max-width : 500px) {
@@ -550,21 +580,47 @@ display: none;
   font-size: 25px;
 }
 }
+.ok{
+  font-size: 20px;
+  font-weight: bolder;
+  color: #F05D23;
+}
+
 
 @media all and (max-width : 375px) {
   .burger,.photo-link,.links{
     display: block;
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
   }
   .link{
     display: none;
   }
   .up{
-    font-size: 8px;
+    font-size: 7px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  .headPageTwo{
+    margin-top: 125px;
+  }
+  h5{
+padding: 6px;
+
+  }
+  .block{
+    align-items: center;
+    width: 150px;
+    margin: 5px;
+  }
+  #photo{
+    width: 125px;
+    height: 70px;
   }
   .cartIcon{
-    margin-bottom: 50px;
+    margin-bottom: 5px;
   }
 .p-cart{
   margin-bottom: 60px;
@@ -573,26 +629,23 @@ display: none;
 }
 .main-photo{
   width: auto;
-height: 250px;
+height: 230px;
 }
 
   nav{
-    height: 80px;
+    height: 110px;
+    
   }
-  
-  .about-us-text{
-    margin-top: 5px;
-    font-size: 23px;
+  #nav-two{
+    width:310px;
+    margin-right: 16px;
+    height: 200px;
   }
-  .about-us-word{
-    font-size: 18px;
-    }
-    .btn-right,.btn-left{
-      margin: 10px;
-      }
+ 
       .photo-about{
-        height: auto;
+       
         width: 371px;
+        height: auto;
       }
       .head-contact{
         font-size: 20px;

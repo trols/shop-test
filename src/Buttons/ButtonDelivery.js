@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
                            Оформить доставку
                         </button>
                       </Link>
-                  </div>
+                  </div> 
                     )
 }
 export default ButtonDelivery;

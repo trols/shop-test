@@ -24,34 +24,16 @@ function changeValue(e) {
         else{alert(' промокод не подходит')}
     }
 
-    const Delivery = ()=>{
-
-    }
-    const Deliveryplus = ()=>{
-
-    }
-
 return( 
     <div>
        <div className="text-delivery">
            <p>Количество товара:{totalProducts} шт.</p>
            <h3>Ваш заказ на сумму: {totalPrice} рублей</h3>
            <input className="" placeholder="Введите промо-код..." value={value} onChange={changeValue} />
-           <button className="" onClick={Promocode}>
+           <button className="add-button-delivery" onClick={Promocode}>
             Добавить
            </button>
-           <h3>Сумма со скидкой:  {totalPrice-totalPrice*(sale/100)} рублей</h3>
-
-            <div id="all-delivery-box">
-               <div>
-                   <button onClick={Deliveryplus}className="delivery-box">Доставка</button>
-               </div>
-
-               <div >
-                   <button onClick={Delivery} className="delivery-box">Самовывоз</button>
-               </div>
-            </div>
-        <h3>Сумма с доставкой:  {totalPrice-(totalPrice*sale/100)+200} рублей</h3>
+           <h3>Итоговая сумма:  {totalPrice-totalPrice*(sale/100)} рублей</h3>
 
         <form action="https://formspree.io/f/mpzbnday"  method="POST">
           <input placeholder="Ваше имя ..." type="text"  name="username" required />

@@ -28,7 +28,7 @@ const [modalActive,setModalActive]= useState(false);
 return <Router>
      <div className='up'>
        <p className='up-white'>
-         Скидки 10% на сезонные овощи и фрукты с промокодом : OK
+         Скидка 10% с промокодом : <span className='ok'>OK</span>
        </p>
       </div>
     
@@ -64,7 +64,7 @@ return <Router>
           <Route path="/contact" element={ <Contact/> } />
           <Route path="/delivery" element={ <Delivery/> } />
        </Routes>
-
+       
       <div>
         <Footer/>
       </div>

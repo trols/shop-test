@@ -21,7 +21,7 @@ return(
             <ButtonDelivery/>
 
             <button id="close"className="modal-content"onClick={() => setActive(false)}>
-                  продолжить покупки
+                  Продолжить покупки
             </button>
               
            <div className={active ? 'scrollLine close': 'scrollLine open'}> 
