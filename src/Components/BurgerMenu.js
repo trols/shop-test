@@ -26,6 +26,7 @@ function BurgerMenu(){
                           <Link to="/" className='links' onClick={BurgerMenu}> Главная </Link>
                           <Link to="/about" className='links' onClick={BurgerMenu}> О нас</Link>
                           <Link to="/contact" className='links' onClick={BurgerMenu}> Контакты </Link>
+                          <Link to="/delivery" className='links' >Доставка</Link>
                         </div>
                     </div>
 
