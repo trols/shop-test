@@ -12,7 +12,12 @@ function Footer(){
                     <input id='name-contact' placeholder="Введите ваш Email..." type="email"  name="email"  required/>
                     <button className='but-contact-footer' name="submit" type="submit" id=""> Отправить </button>
                  </form>
+                     <div className="foot">
+                         <p className="name-foot"> Designed and Developed by Olga Travina</p>
+                         <p className="name-foot">2022</p>
+                     </div>
             </div>
+            
         </div>
     )
 }

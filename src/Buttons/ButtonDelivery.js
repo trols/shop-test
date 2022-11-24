@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
               return(
                    <div> 
                       <Link to="/delivery">
-                        <button className='button-two-page'>
+                        <button className='button-two-page' >
                            Оформить доставку
                         </button>
                       </Link>

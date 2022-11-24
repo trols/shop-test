@@ -12,7 +12,7 @@ return(
           {dataProducts
           .filter(prod=>{
            if (selectedCategory === 'КАТАЛОГ')return true;
-           return selectedCategory === prod.category;
+           return selectedCategory === prod.choice;
                   })
             .map(prod =><Prod prod={prod} key={prod.id}/>)}
       </div>

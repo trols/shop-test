@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 .App{
@@ -15,9 +14,81 @@ body {
   align-items: center;
   margin-top: 0px;
   }
+  /*кнопки товаров по группам*/
+.categories{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+  .pr{
+    padding: 8px;
+    width: 90px;
+    margin: 10px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    text-align:center;
+  }
+  .pr:hover{
+    background: #F05D23;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #F05D23;
+  }
+  .all{
+    background: white;
+    border: 2px solid green;
+  }
+  .vegetables{
+    background: #9ee8a5;
+    border: 2px solid #9ee8a5;
+  }
+  .fruits{
+    background: rgb(243, 243, 140);
+    border: 2px solid rgb(243, 243, 140);;
+  }
+  .meat{
+    background: rgb(241, 218, 218);
+    border: 2px solid rgb(241, 218, 218);
+  }
+    .fish{
+      background: rgb(108, 212, 224);
+      border: 2px solid rgb(108, 212, 224);
+    }
+  .bread{
+    background: #dcb179;
+    border: 2px solid #dcb179;
+  }
+  .alcohol{
+    background: #e4707f;
+    border: 2px solid #e4707f
+  }
+  .secondHead{
+    font-weight: 300;
+  }
+  .firstHead{
+    font-weight: 250;
+  }
+  .main-photo{
+    width: auto;
+    height: 500px;
+  }
+  
   h1{
     margin-top: 0px;
+    
   }
+  h2{
+    font-weight: lighter;
+    letter-spacing: 3px;
+
+  }
+  h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: lighter;
+    color: #1B4B36;
+  }
+ 
   .main-photo{
     margin-top: 0px;
   }
@@ -35,34 +106,16 @@ body {
   align-items: center;
   border: 1px solid black;
 }
+.in-cart{
+  display: flex;
+ padding: 20px;
+ justify-content: space-around;
+ align-items: center;
+}
 /*размер иконки корзины*/
 .cartIcon{
   width: 50px;
-  
-}
-/*кнопки товаров по группам*/
-.categories{
-  display: flex;
-  justify-content: space-around;
-flex-wrap: wrap;
-
-}
-h5{
-  padding: 8px;
-  width: 70px;
-  margin: 10px;
-  background-color: #fff;
-  color: black;
-  border: 1px solid;
-  font-family: 'Inter', sans-serif;
-  font-weight: lighter;
-  text-align:center;
-}
-h5:hover{
-  background-color: #F05D23;
-  color: #fff;
-  cursor: pointer;
-}
+  }
 /*фото в карточке товара*/
 .goods{
 display: flex;
@@ -89,12 +142,12 @@ max-width: 91vw;
   margin-left: auto;
   
 }
+/*Всплывающее окно от корзины*/
 #window{
-  width: 300px;
+  width: 80%;
   height: auto;
   text-align: center;
-  padding: 15px;
-  border: 3px solid green;
+  padding: 1px;
   border-radius: 10px;
   color: black;
   position: absolute;
@@ -102,9 +155,19 @@ max-width: 91vw;
   right: 0;
   left: 0;
   margin: auto;
+  background-color: #eff9e9;
+}
+/*Кнопки во всплывающем окне*/
+.button-in-cart{
+  display: flex;
+  justify-content: center;
+  
+}
+/*цвет фона средней части рамки*/
+.cart-fon{
   background: #fff;
 }
-/*кнопка закрыть в окне корзины*/
+/*кнопка продолжить в окне корзины*/
 #close {
   display: inline-block;
   border: 1px solid green;
@@ -124,12 +187,18 @@ max-width: 91vw;
 .icon{
   width: 20px;
 }
+hr{
+ 
+  height:1px; 
+  background: green;
+   margin-right: 35px;
+margin-left: 35px;
+}
 /*фото внутри корзины*/
 #cart-photo{
   width: 90px;
   height: 60px;
 }
-
 nav{
   position: -webkit-sticky;
   position: sticky;
@@ -188,7 +257,7 @@ form{
   
 /*кнопка в контакты*/
 .but-contact{
-  background-color: #CCEABB;
+background-color: #CCEABB;
 color: black;
 border: none;
 font-size: 15px;
@@ -260,8 +329,15 @@ padding: 10px;
   font-weight: bolder;
   font-size: 20px;
 }
-h2{
-  font-weight: lighter;
+
+.weight{
+  font-weight: bolder;
+  font-size: 25px;
+}
+.weight-two{
+  color: #1B4B36;
+  font-weight: bold;
+  font-size: 25px;
 }
 .del{
   border: none;
@@ -279,8 +355,8 @@ h2{
   position: fixed;
   top: 0;
   left: 0;
-opacity: 0;
-pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
   transition: .1s;
   
 }
@@ -301,6 +377,7 @@ width: 50vw;
   overflow-y: scroll;
   max-height: 45vh;
   scrollbar-width: thin;
+ 
 }
 .up{
   display: flex;
@@ -310,17 +387,17 @@ width: 50vw;
   align-items: center;
   font-family: 'Inter', sans-serif;
   letter-spacing: 2px;
-color: green;
+  color: green;
 }
 .categories-button{
   position: -webkit-sticky;
   position: sticky;
   top: 116px;
- height: 100px;
+  height: 100px;
   display: flex;
- align-items: center;
- justify-content: space-around;
- background-color: #fff;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
   flex-wrap: wrap;
 }
 .button-about{
@@ -452,27 +529,11 @@ display: none;
   bottom: -14px;
   transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-/*Анимация полосок
-.burger span.active:before{
-  content: "";
-  top: 0px;
-  transform: rotate(45deg);
-  transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-.burger span.active:after{
-  content: "";
-  bottom: 0;
-  transform: rotate(-45deg);
-  transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-Прозрачный 
-.burger span.active{
-  background: rgba(255, 255, 255, 0); 
-}
-*/
-
-
-.link-two{
+.ok{
+  color: #F05D23;
+  font-weight: bold;
+  font-size: 20px;
+}.link-two{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -522,6 +583,10 @@ display: none;
   text-decoration: none;
 
 }
+.btnPageTwo:hover{
+  background: #FD841F;
+  border: 2px solid #FD841F;
+}
 /*Наши продукты*/
 .headPageTwo{
   margin-top: 120px;
@@ -529,7 +594,7 @@ display: none;
   font-weight: lighter;
 }
 .add-button-delivery{
-  padding: 10px;
+  padding: 8px;
   border: 2px solid green;
   background-color: white;
   font-family: 'Inter', sans-serif;
@@ -558,6 +623,17 @@ display: none;
   background-color: orange;
   border: 1px solid orange;
 }
+.name-foot{
+  font-size: 10px;
+  font-family: 'Inter', sans-serif;
+  margin: 5px;
+  font-size: 10px;
+}
+.foot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 @media all and (max-width : 500px) {
   .burger,.photo-link,.links{
@@ -565,105 +641,157 @@ display: none;
     display: flex;
     flex-direction: column;
   }
+  #first-nav{
+    max-height: 100%;
+    }
   .link{
     display: none;
   }
   .up{
     font-size: 11px;
   }
+  .up-white{
+    font-size: 15px;
+  }
   .cartIcon{
     margin-bottom: 50px;
+  }
+  #window.modal-content{
+    margin-top: 5px;
   }
 .p-cart{
   margin-bottom: 60px;
   margin-left: 10px;
   font-size: 25px;
-}
 }
 .ok{
   font-size: 20px;
   font-weight: bolder;
   color: #F05D23;
 }
+input{
+  width: 81%;
+  }
+.main-photo{
+  width: 361px;
+  height: auto;
+  }
+  iframe{
+    width: 361px;
+  }
+  #name-contact{
+    width: 311px;
+  }
+.block{
+  align-items: center;
+  width: 170px;
+  margin: 5px;
+}
+#photo{
+  width: 125px;
+  height: 70px;
+}
+.categories{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+  .pr{
+padding: 10px;
+width: 300px;
 
+  }
+  .photo-about{
+    width: 361px;
+  }
+  .scrollLine{
+    height: 150px;
+  }
+}
+@media all and (max-width : 414px) {
+  .firstHead{
+    margin-top: 130px;
+  }
+  .btnPageTwo{
+    margin-top: 70px;
+  }
+}
 
 @media all and (max-width : 375px) {
-  .burger,.photo-link,.links{
-    display: block;
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
+  .firstHead{
+    margin-top: 10px;
   }
-  .link{
-    display: none;
+  h3{
+    margin-top: 10px;
   }
-  .up{
-    font-size: 7px;
+  .scrollLine{
+    height: 100px;
   }
-  h2{
-    font-size: 20px;
-  }
-  .headPageTwo{
-    margin-top: 125px;
-  }
-  h5{
-padding: 6px;
-
-  }
-  .block{
-    align-items: center;
-    width: 150px;
-    margin: 5px;
-  }
-  #photo{
-    width: 125px;
-    height: 70px;
-  }
-  .cartIcon{
-    margin-bottom: 5px;
-  }
-.p-cart{
-  margin-bottom: 60px;
-  margin-left: 10px;
-  font-size: 25px;
 }
-.main-photo{
-  width: auto;
-height: 230px;
-}
-
-  nav{
-    height: 110px;
-    
+@media all and (max-width : 375px) {
+  .main-photo{
+    width: 260px;
   }
-  #nav-two{
-    width:310px;
-    margin-right: 16px;
-    height: 200px;
-  }
- 
-      .photo-about{
-       
-        width: 371px;
-        height: auto;
-      }
-      .head-contact{
-        font-size: 20px;
-      }
+  .up-white{
+    font-size: 9px;}
+    #nav-two{
+      margin-right: 13px;
+    }
+    .scrollLine{
+      height: 100px;
+    }
+    h3{
+      margin-top: 0px;
+    }
+    .add-button-delivery{
+      padding: 10px;
       
-      #window{
-        width: 301px;
-       
-      }
-       .modal.active{
-      opacity: 1;
-      pointer-events: all;
-      }
-      .scrollLine {
-        max-height: 31vh;
-        scrollbar-width: thick;
-      }
+    }
+   #close{
+      margin-right: 0px;
+      font-size: 10px;
+      padding: 2px;
+     width: 80px;
+    }
+    .add-button-delivery{
+      
+      width: 100px;
+    }
+    .button-two-page{
+      width: 80px;
+      font-size: 12px;
+    }
+    #close.modal-content{
+      width: 80px;
+      font-size: 12px;
+    }
+.pr{
+  width: 200px;
 }
-
-
-
+    form{
+      width: 260px;
+    }
+    .par-contact{
+      font-size: 20px;
+    }
+    #name-contact{
+      width: 240px;
+    }
+    .photo-about{
+      width: 240px;
+    }
+    .about-us-text{
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+    .about-us-word{
+      font-size: 20px;
+    }
+    iframe{
+      width: 260px;
+    }
+    .par-foot{
+      font-size: 11px;
+    }
+  
+}

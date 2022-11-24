@@ -1,6 +1,6 @@
 
 import './App.css';
-import green from './green-apple.png';
+import green from './star.png';
 import React, { useState } from 'react';
 
 import {
@@ -17,7 +17,7 @@ import TotalProductsNum from './Components/Cart/TotalProductsNum';
 import Cart from './Components/Cart/Cart'
 import Footer from './Components/Footer';
 import BurgerMenu from './Components/BurgerMenu';
-
+import Animation from './Components/Animation';
 
 
 function App() {
@@ -26,15 +26,10 @@ function App() {
 const [modalActive,setModalActive]= useState(false);
 
 return <Router>
-     <div className='up'>
-       <p className='up-white'>
-         Скидка 10% с промокодом : <span className='ok'>OK</span>
-       </p>
-      </div>
-    
+     <Animation/>
       <nav id='first-nav'>
      
-        <Link to="/" className='link' ><img src={ green }alt='green'/></Link>
+        <Link to="/" className='link' ><img width="40px" src={ green }alt='green'/></Link>
         <Link to="/about" className='link' > О нас</Link>
         <Link to="/delivery" className='link' >Доставка</Link>
         <Link to="/contact" className='link'>Контакты</Link>

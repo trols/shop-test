@@ -1,299 +1,384 @@
 const dataProducts = [
     {
         id: 1,
-        price: 100,
+        choice:"ФРУКТЫ",
+        price: 110,
         img: 'apple',
         category: 'ФРУКТЫ',
-        name: 'Яблоки'
+        name: 'Яблоки',
+        form: 'кг'
     },
     {
         id: 2,
+        choice:"ФРУКТЫ",
         price: 150,
         img: 'orange',
         category: 'ФРУКТЫ',
-        name: 'Апельсины'
+        name: 'Апельсины',
+        form: 'кг'
     },
     {
         id: 3,
-        price: 100,
+        choice:"ФРУКТЫ",
+        price: 60,
         img: 'bananas',
         category: 'ФРУКТЫ',
-        name: 'Бананы'
+        name: 'Бананы',
+        form: 'кг'
     },
     {
         id: 4,
-        price: 140,
+        choice:"ФРУКТЫ",
+        price: 340,
         img: 'grapes',
         category: 'ФРУКТЫ',
-        name: 'Виноград'
+        name: 'Виноград',
+        form: 'кг'
     },
     {
         id: 5,
-        price: 100,
+        choice:"ФРУКТЫ",
+        price: 300,
         img: 'peach',
         category: 'ФРУКТЫ',
-        name: 'Персики'
+        name: 'Персики',
+        form: 'кг'
     },
     {
         id: 6,
-        price: 100,
-        img: 'apple',
+        choice:"ФРУКТЫ",
+        price: 80,
+        img: 'pear',
         category: 'ФРУКТЫ',
-        name: 'Яблоки'
+        name: 'Груши',
+        form: 'кг'
     },
     {
         id: 7,
-        price: 100,
+        choice:"ФРУКТЫ",
+        price: 170,
         img: 'avocado',
         category: 'ФРУКТЫ',
-        name: 'Авокадо'
+        name: 'Авокадо',
+        form: 'шт'
     },
     {
         id: 8,
-        price: 100,
+        choice:"ФРУКТЫ",
+        price: 110,
         img: 'persimmon',
         category: 'ФРУКТЫ',
-        name: 'Хурма'
+        name: 'Хурма',
+        form: 'кг'
     },
     {
         id: 9,
-        price: 100,
+        choice:"ФРУКТЫ",
+        price: 500,
         img: 'pineapple',
         category: 'ФРУКТЫ',
-        name: 'Ананас'
+        name: 'Ананас',
+        form: 'шт'
     },
     {
         id: 10,
-        price: 110,
+        choice: "ОВОЩИ",
+        price: 210,
         img: 'tomato',
         category: 'ОВОЩИ',
-        name: 'Помидоры'
+        name: 'Помидоры',
+        form: 'кг'
     },
     {
         id: 11,
+        choice: "ОВОЩИ",
         price: 120,
         img: 'cucumber',
         category: 'ОВОЩИ',
-        name: 'Огурцы'
+        name: 'Огурцы',
+        form: 'кг'
     },
     {
         id: 12,
-        price: 110,
+        choice: "ОВОЩИ",
+        price: 30,
         img: 'carrot',
         category: 'ОВОЩИ',
-        name: 'Морковь'
+        name: 'Морковь',
+        form: 'кг'
     },
     {
         id: 13,
+        choice: "ОВОЩИ",
         price: 110,
         img: 'potato',
         category: 'ОВОЩИ',
-        name: 'Картофель'
+        name: 'Картофель',
+        form: 'кг'
     },
     {
         id: 14,
-        price: 110,
+        choice: "ОВОЩИ",
+        price: 50,
         img: 'onion',
         category: 'ОВОЩИ',
-        name: 'Репчаптый лук'
+        name: 'Репчаптый лук',
+        form: 'кг'
     },
     {
         id: 15,
-        price: 110,
+        choice: "ОВОЩИ",
+        price: 180,
         img: 'zucchini',
         category: 'ОВОЩИ',
-        name: 'Кабачок'
+        name: 'Кабачок',
+        form: 'кг'
     },
     {
         id: 16,
-        price: 110,
+        choice: "ОВОЩИ",
+        price: 40,
         img: 'parsley',
         category: 'ОВОЩИ',
-        name: 'Зелень'
+        name: 'Укроп',
+         form: 'уп, 50 гр'
+
     },
     {
         id: 17,
-        price: 110,
+        choice: "ОВОЩИ",
+        price: 220,
         img: 'aubergine',
         category: 'ОВОЩИ',
-        name: 'Баклажаны'
+        name: 'Баклажаны',
+        form: 'кг'
     },
     {
         id: 18,
-        price: 110,
+        choice: "ОВОЩИ",
+        price: 40,
         img: 'garlic',
         category: 'ОВОЩИ',
-        name: 'Чеснок'
+        name: 'Чеснок',
+        form: 'уп, 3 шт'
     },
     
     {
         id: 19,
-        price: 130,
+        choice: "МЯСО",
+        price: 330,
         img: 'meat',
         category: 'МЯСО',
-        name: 'Говядина'
+        name: 'Говядина',
+        form: 'кг'
     },
     {
         id: 20,
-        price: 130,
+        choice: "МЯСО",
+        price: 280,
         img: 'pork',
         category: 'МЯСО',
-        name: 'Свинина'
+        name: 'Свинина',
+        form: 'кг'
     },
     {
         id: 21,
-        price: 130,
+        choice: "МЯСО",
+        price: 290,
         img: 'lamb',
         category: 'МЯСО',
-        name: 'Баранина'
+        name: 'Баранина',
+        form: 'кг'
     },
     {
         id: 22,
-        price: 130,
+        choice: "МЯСО",
+        price: 210,
         img: 'chicken',
         category: 'МЯСО',
-        name: 'Курица'
+        name: 'Курица',
+        form: 'кг'
     },
     {
         id: 23,
+        choice: "МЯСО",
         price: 130,
         img: 'dumplings',
         category: 'МЯСО',
-        name: 'Пельмени'
+        name: 'Пельмени',
+        form: 'уп, 500 гр'
     },
     {
         id: 24,
-        price: 130,
+        choice: "МЯСО",
+        price: 200,
         img: 'nuggets',
         category: 'МЯСО',
-        name: 'Котлеты'
+        name: 'Котлеты',
+        form: 'уп,500 гр'
     },
 
     {
         id: 25,
+        choice: "РЫБА",
         price: 140,
         img: 'pike',
         category: 'РЫБА',
-        name: 'Щука'
+        name: 'Щука',
+        form: 'кг'
     },
     {
         id: 26,
-        price: 140,
+        choice: "РЫБА",
+        price: 150,
         img: 'perch',
         category: 'РЫБА',
-        name: 'Окунь'
+        name: 'Окунь',
+        form: 'кг'
     },
     {
         id: 27,
-        price: 140,
+        choice: "РЫБА",
+        price: 100,
         img: 'cod',
         category: 'РЫБА',
-        name: 'Треска'
+        name: 'Треска',
+        form: 'кг'
     },
     {
         id: 28,
-        price: 140,
+        choice: "РЫБА",
+        price: 360,
         img: 'salmon',
         category: 'РЫБА',
-        name: 'Лосось'
+        name: 'Лосось',
+        form: 'кг'
     },
     {
         id: 29,
-        price: 140,
+        choice: "РЫБА",
+        price: 340,
         img: 'zander',
         category: 'РЫБА',
-        name: 'Судак'
+        name: 'Судак',
+        form: 'кг'
     },
     {
         id: 30,
+        choice: "РЫБА",
         price: 140,
         img: 'smoked-fish',
         category: 'РЫБА',
-        name: 'Копчёная рыба'
+        name: 'Копчёная рыба',
+        form: 'шт'
     },
     {
         id: 31,
-        price: 120,
+        choice: "ХЛЕБ",
+        price: 100,
         img: 'bread',
         category: 'ХЛЕБ',
-        name: 'Черный хлеб'
+        name: 'Черный хлеб',
+        form: 'шт.'
     },
     {
         id: 32,
-        price: 120,
+        choice: "ХЛЕБ",
+        price: 110,
         img: 'white-bread',
         category: 'ХЛЕБ',
-        name: 'Белый хлеб'
+        name: 'Белый хлеб',
+        form: 'шт.'
     },
     {
         id: 33,
+        choice: "ХЛЕБ",
         price: 120,
         img: 'cereal-bread',
         category: 'ХЛЕБ',
-        name: 'Зерновой хлеб'
+        name: 'Зерновой хлеб',
+        form: ' шт.'
     },
     {
         id: 34,
-        price: 120,
+        choice: "ХЛЕБ",
+        price: 50,
         img: 'croissant',
         category: 'ХЛЕБ',
-        name: 'Круассаны'
+        name: 'Круассаны',
+        form: ' шт.'
     },
     {
         id: 35,
-        price: 120,
+        choice: "ХЛЕБ",
+        price: 70,
         img: 'baked-pies',
         category: 'ХЛЕБ',
-        name: 'Пирожки'
+        name: 'Пирожки',
+        form: 'шт.'
     },
     {
         id: 36,
+        choice: "ХЛЕБ",
         price: 120,
         img: 'cookies',
         category: 'ХЛЕБ',
-        name: 'Печенье'
+        name: 'Печенье',
+        form: 'упак.'
     },
     {
         id: 37,
-        price: 150,
+        choice: "АЛКОГОЛЬ",
+        price: 200,
         img: 'vodka',
         category: 'АЛКОГОЛЬ',
-        name: 'Водка'
+        name: 'Водка',
+        form: 'бут.'
     },
     {
         id: 38,
-        price: 150,
+        choice: "АЛКОГОЛЬ",
+        price: 550,
         img: 'champagne',
         category: 'АЛКОГОЛЬ',
-        name: 'Шампанское'
+        name: 'Шампанское',
+        form: 'бут.'
     },
     {
         id: 39,
-        price: 150,
+        choice: "АЛКОГОЛЬ",
+        price: 1800,
         img: 'whiskey',
         category: 'АЛКОГОЛЬ',
-        name: 'Виски'
+        name: 'Виски',
+        form: 'бут.'
     },
     {
         id: 40,
+        choice: "АЛКОГОЛЬ",
         price: 150,
         img: 'bear',
         category: 'АЛКОГОЛЬ',
-        name: 'Пиво'
+        name: 'Пиво',
+        form: 'бут.'
     },
     {
         id: 41,
-        price: 150,
+        choice: "АЛКОГОЛЬ",
+        price: 450,
         img: 'red-wine',
         category: 'АЛКОГОЛЬ',
-        name: 'Красное вино'
+        name: 'Красное вино',
+        form: 'бут.'
     },
     {
         id: 42,
-        price: 150,
+        choice: "АЛКОГОЛЬ",
+        price: 450,
         img: 'white-wine',
         category: 'АЛКОГОЛЬ',
-        name: 'Белое вино'
+        name: 'Белое вино',
+        form: 'бут.'
     },
     
 ]
