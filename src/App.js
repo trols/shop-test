@@ -31,7 +31,7 @@ return <Router>
      
         <Link to="/" className='link' ><img width="40px" src={ green }alt='green'/></Link>
         <Link to="/about" className='link' > О нас</Link>
-        <Link to="/delivery" className='link' >Доставка</Link>
+        <Link to="/delivery" className='link' >Дoставка</Link>
         <Link to="/contact" className='link'>Контакты</Link>
         
        <div className='cart-num'>

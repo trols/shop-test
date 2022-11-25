@@ -68,10 +68,10 @@ body {
   }
   .firstHead{
     font-weight: 250;
-    margin-top: 130px;
+    margin-top: 80px;
   }
   .main-photo{
-    width: 700px;
+    width: 600px;
     height: auto;
   }
   
@@ -141,7 +141,7 @@ max-width: 91vw;
 }
 /*Всплывающее окно от корзины*/
 #window{
-  width: 80%;
+  width: 30%;
   height: auto;
   text-align: center;
   padding: 1px;
@@ -204,7 +204,7 @@ nav{
   height: 116px;
   display: flex;
  align-items: center;
- justify-content: space-evenly;
+ justify-content: center;
  background: rgb(255,255,255);
 background: linear-gradient(180deg, rgba(255,255,255,0.9893617021276596) 44%, rgba(205,235,180,1) 100%);
   flex-wrap: wrap;
@@ -216,6 +216,7 @@ background: linear-gradient(180deg, rgba(255,255,255,0.9893617021276596) 44%, rg
   font-family: 'Inter', sans-serif;
   flex-wrap: wrap;
   cursor: pointer;
+  margin-right: 100px;
   }
   .link:hover{
     color: #F05D23;
@@ -643,6 +644,9 @@ display: none;
 .scrollLine{
   height: 150px;
 }
+#window{
+  width: 80%;
+}
 }
 @media all and (max-width : 1024px) {
 .main-photo{
@@ -651,6 +655,8 @@ display: none;
 }
 #first-nav{
   max-height: 100%;
+  display: flex;
+  justify-content: space-around;
   }
   .scrollLine{
     height: 110px;
@@ -658,6 +664,7 @@ display: none;
   .firstHead{
     margin-top: 20px;
   }
+  
 }
 @media all and (max-width : 820px) {
   #first-nav{
@@ -682,6 +689,12 @@ display: none;
 @media all and (max-width : 540px) {
   #first-nav{
     max-height: 100%;
+    display: flex;
+    justify-content: center;
+
+    }
+    .link{
+      margin: 15px;
     }
     .pr{
       width: 80px;
@@ -698,6 +711,7 @@ display: none;
     .firstHead{
       margin-top: 50px;
     }
+    
 }
 @media all and (max-width : 500px) {
   .burger,.photo-link,.links{
@@ -788,6 +802,11 @@ width: 300px;
   .about-us-word{
     font-size: 22px;
   }
+  #first-nav{
+    max-height: 100%;
+    display: flex;
+    justify-content: space-around;
+    }
 }
 @media all and (max-width : 393px) {
   .about-us-word{
@@ -804,6 +823,11 @@ width: 300px;
   }
 }
 @media all and (max-width : 375px) {
+  #first-nav{
+    max-height: 100%;
+    display: flex;
+    justify-content: space-around;
+    }
   .main-photo{
     width: 260px;
   }
