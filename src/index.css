@@ -777,22 +777,28 @@ width: 300px;
   .btnPageTwo{
     margin-top: 70px;
   }
+  .about-us-text{
+    font-size: 25px;
+  }
+  .about-us-word{
+    font-size: 22px;
+  }
 }
-
-@media all and (max-width : 375px) {
-  .firstHead{
-    margin-top: 10px;
+@media all and (max-width : 390px) {
+  .about-us-text{
+    font-size: 23px;
+    margin-bottom: 5px;
   }
-  h3{
-    margin-top: 10px;
-  }
-  .scrollLine{
-    height: 100px;
+  .about-us-word{
+    font-size: 19px;
   }
 }
 @media all and (max-width : 375px) {
   .main-photo{
     width: 260px;
+  }
+  .firstHead{
+    margin-top: 10px;
   }
   .up-white{
     font-size: 9px;}
@@ -843,11 +849,11 @@ width: 300px;
       width: 240px;
     }
     .about-us-text{
-      font-size: 30px;
+      font-size: 23px;
       margin-bottom: 5px;
     }
     .about-us-word{
-      font-size: 20px;
+      font-size: 19px;
     }
     iframe{
       width: 260px;
