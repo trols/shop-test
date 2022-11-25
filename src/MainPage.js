@@ -23,7 +23,8 @@ return(
             <h2 className="secondHead">ДОСТАВКА 24/7</h2>
             
             <div className="photo-text-button">
-               <img className="main-photo" src="https://img.freepik.com/premium-photo/collection-vegetables-isolated-white-background_44074-1573.jpg?size=626&ext=jpg&ga=GA1.2.1287222821.1659992797&semt=sph" alt="about"/>
+               <img className="main-photo" 
+               src="https://img.freepik.com/premium-photo/collection-vegetables-isolated-white-background_44074-1573.jpg?size=626&ext=jpg&ga=GA1.2.1287222821.1659992797&semt=sph" alt="about"/>
              </div>
  
               <a className="btnPageTwo " href="#PageTwo">Начать покупки</a>
