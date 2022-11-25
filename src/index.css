@@ -599,6 +599,7 @@ display: none;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: lighter;
+  color: black;
 }
 .add-button-delivery:hover{
   color: #fff;
