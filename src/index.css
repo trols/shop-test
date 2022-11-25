@@ -784,6 +784,11 @@ width: 300px;
     font-size: 22px;
   }
 }
+@media all and (max-width : 393px) {
+  .about-us-word{
+    font-size: 20px;
+  }
+}
 @media all and (max-width : 390px) {
   .about-us-text{
     font-size: 23px;
