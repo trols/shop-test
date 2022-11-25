@@ -636,6 +636,15 @@ display: none;
   flex-direction: column;
   align-items: center;
 }
+@media all and (max-width : 1280px) {
+.main-photo{
+  width: 520px;
+  height: auto;
+}
+.scrollLine{
+  height: 150px;
+}
+}
 @media all and (max-width : 1024px) {
 .main-photo{
   width: 350px;
