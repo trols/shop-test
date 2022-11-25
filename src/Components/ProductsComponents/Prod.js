@@ -31,7 +31,7 @@ return(
                  setQuantity={setQuantity}
                  />
                     <button className="button-add"
-                    onClick={hadleToCart}>
+                        onClick={hadleToCart}>
                         Добавить
                      </button>
         </div>
