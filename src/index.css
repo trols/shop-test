@@ -636,6 +636,18 @@ display: none;
   flex-direction: column;
   align-items: center;
 }
+@media all and (max-width : 1024px) {
+.main-photo{
+  width: 350px;
+  height: auto;
+}
+#first-nav{
+  max-height: 100%;
+  }
+  .scrollLine{
+    height: 110px;
+  }
+}
 @media all and (max-width : 820px) {
   #first-nav{
     max-height: 100%;
@@ -668,6 +680,9 @@ display: none;
     .main-photo{
       width: 500px;
       height: auto;
+    }
+    .scrollLine{
+      height: 150px;
     }
 }
 @media all and (max-width : 500px) {
@@ -832,4 +847,16 @@ width: 300px;
       font-size: 11px;
     }
   
+}
+@media all and (max-width : 280px) {
+  h3{
+    margin-top: 5px;
+  }
+  .weight{
+    font-size: 20px;
+  }
+  #cart-photo{
+    width: 60px;
+    height: auto;
+  }
 }
