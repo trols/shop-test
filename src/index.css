@@ -312,6 +312,7 @@ padding: 10px;
   border: 2px solid #CCEABB;
   background-color: #CCEABB;
   padding: 5px;
+  color: black;
 }
 .button-add:hover{
   background-color: #fff;
@@ -323,6 +324,7 @@ padding: 10px;
   border: 1px solid green;
   background-color: #fff;
   font-size: 17px;
+  color:black;
 }
 .quantity{
   color: red;
